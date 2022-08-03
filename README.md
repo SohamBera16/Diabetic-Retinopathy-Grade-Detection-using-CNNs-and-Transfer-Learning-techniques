@@ -1,6 +1,6 @@
-## Diabetic Retinopathy Grade Detection using Convolutional Neural Networks (CNNs) and Transfer Learning techniques
+# Diabetic Retinopathy Grade Detection using Convolutional Neural Networks (CNNs) and Transfer Learning techniques
 
-# Goals/Objectives: 
+## Goals/Objectives: 
 1) To automate the process of detecting the severity grades (grade 0 to grade 4) of Diabetic Retinopathy (DR) disease using Convolutional Neural Networks(CNN) with a better prediction than guessing.
 2) Experimentation with different data pre-processing techniques, parameters and hyperparameters related to the model (Parameters: configuration variables internal to the model, Hyperparameters: explicitly specified parameters that control the training), and model architectures and understanding how it affects the final effectiveness of predictions
 3) Implementing Filter, Kernel, Feature attribute, layer attribute visualization techniques for model explainability
@@ -47,4 +47,4 @@ Once you are satisfied with the settings, simply run the main.py from the root d
   `python3 main.py`
 
 ## Disclaimer: 
-This project was developed by the author as part of the Fachpraktikum (advanced internship): Artificial Intelligence within the Master of Science (M.Sc.) degree program of the University of Stuttgart. 
+This project was developed by the author as part of the Fachpraktikum (advanced internship): Artificial Intelligence within the University of Stuttgart. [Year: 2022]
