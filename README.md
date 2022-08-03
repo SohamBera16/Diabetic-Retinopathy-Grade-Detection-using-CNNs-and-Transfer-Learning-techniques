@@ -10,6 +10,8 @@ Indian Diabetic Retinopathy Dataset (IDRID) - Disease Grading sub-section which 
 1. Original color fundus images of human retina (516 images divided into train set (413 images) and test set (103 images) - JPG Files)
 2. Groundtruth Labels for Diabetic Retinopathy (Divided into train and test set - CSV File)
 
+[The dataset can be downloaded from this link] (https://ieee-dataport.org/open-access/indian-diabetic-retinopathy-image-dataset-idrid)
+
 ## Baseline CNN Model execution :
 - Run main.py in the root directory using the command -
 
