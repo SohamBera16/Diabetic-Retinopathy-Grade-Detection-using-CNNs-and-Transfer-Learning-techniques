@@ -65,7 +65,7 @@ class CNN(nn.Module):
         return out
 
 
-# This is the baseline CNN model as presented during the lab.
+# This is the baseline CNN model against which we will evaluate our improved model's success
 class CNNBase(nn.Module):
     def __init__(self, num_classes=5):
         super(CNNBase, self).__init__()
