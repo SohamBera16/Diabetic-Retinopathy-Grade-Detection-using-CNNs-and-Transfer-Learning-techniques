@@ -97,8 +97,9 @@ if __name__ == '__main__':
     tr = transforms.Compose([
         transforms.Resize((64, 64))
     ])
-
-    dir = '/workspace/users/Group-2/Data/IDRID_dataset/'
+    
+    # change the directory to the data directory
+    dir = '../IDRID_dataset/'
     img_dir = dir + 'images/test/'
     lbl_file = dir + 'labels/test.csv'
 
