@@ -16,8 +16,8 @@ from metrics import *
 from models import *
 from utils import *
 
-
-def train(model=None, num_epochs=100, train_loader=None, val_loader=None, criterion=None, optimizer=None, dir='/workspace/users/Group-2/', save_name=None):
+# change the dir parameter in the arguments to your file directory
+def train(model=None, num_epochs=100, train_loader=None, val_loader=None, criterion=None, optimizer=None, dir='..', save_name=None):
     print('\nTraining')
     start_time = time.time()
 
@@ -95,8 +95,10 @@ def train(model=None, num_epochs=100, train_loader=None, val_loader=None, criter
     end_time = time.time()
     print(f'Training time: {end_time - start_time}')
 
+    
+# change the dir parameter in the arguments to your file directory
 
-def test(model=None, test_loader=None, dir='/workspace/users/Group-2/', save_name=None):
+def test(model=None, test_loader=None, dir='..', save_name=None):
     print('\nTesting')
     start_time = time.time()
 
@@ -145,7 +147,8 @@ def test(model=None, test_loader=None, dir='/workspace/users/Group-2/', save_nam
 
 
 # This method allows us to test the performance of a single checkpoint.
-def test_ckpt(model=None, test_loader=None, dir='/workspace/users/Group-2/', save_name=None, ckpt=None):
+# change the dir parameter in the arguments to your file directory
+def test_ckpt(model=None, test_loader=None, dir='..', save_name=None, ckpt=None):
     model.load_state_dict(torch.load(
         dir + 'Checkpoints/' + save_name + '/' + ckpt + '.ckpt'))
     model.eval()
@@ -178,7 +181,8 @@ def test_ckpt(model=None, test_loader=None, dir='/workspace/users/Group-2/', sav
 
 
 # This method validates the predictions of the random models against the test set.
-def test_random_model(test_data=None, dir='/workspace/users/Group-2/', save_name=None, mode='all'):
+# change the dir parameter in the arguments to your file directory
+def test_random_model(test_data=None, dir='..', save_name=None, mode='all'):
     print('\nTesting')
     start_time = time.time()
 
@@ -201,7 +205,8 @@ def test_random_model(test_data=None, dir='/workspace/users/Group-2/', save_name
 
 
 # This module shows filter and kernel visualizations for a selected model. 
-def visualize(model=None, test_loader=None, dir='/workspace/users/Group-2/', save_name=None, ckpt=None):
+# change the dir parameter in the arguments to your file directory
+def visualize(model=None, test_loader=None, dir='..', save_name=None, ckpt=None):
     transform_normalize = transforms.Normalize(
         mean=[0.485, 0.456, 0.406],
         std=[0.229, 0.224, 0.225]
@@ -346,7 +351,8 @@ def vis_integrated(model=None, save_name=None, test_loader=None, type = 0):
 
 if __name__ == '__main__':
     # Dataset parameters
-    dir = '/workspace/users/Group-2/'
+    # change the dir parameter in the arguments to your file directory
+    dir = '..'
     data_dir = dir + 'Data/IDRID_dataset/'
     batch_size = 16
     shuffle = True
