@@ -89,12 +89,13 @@ def plot(dir, save_name, start=0, stop=500, name=None):
     plt.savefig(dir + 'Logs/' + save_name + '/plot.png', dpi=300)
 
 
-# This function implements our random models.
-# As our random models are not really models, we put it into utils.
+# This function implements some random models which provide a framework to compare the improved models 
+# with mere guessing probability.
 # If the mode is all, it uniformly selects a label out of [0, 1, 2, 3, 4]
 # If the mode is 02, it uniformly selects a label out of [0, 2]
 # If the mode is distributed, it selects a label out of [0, 1, 2, 3, 4], however,
 # this time the probabilities are dependent on the distribtuion of the labels.
+
 def predict_randomly(mode='all'):
     _len = 103
     if mode == all:
