@@ -13,6 +13,9 @@ Indian Diabetic Retinopathy Dataset (IDRID) - Disease Grading sub-section which 
 The dataset can be downloaded from this link: https://ieee-dataport.org/open-access/indian-diabetic-retinopathy-image-dataset-idrid
 
 ## Baseline CNN Model execution :
+
+Before running the commands, make sure to change or set the directory names as necessary in all the relevant occurances of the "dir" variable across different modules.
+
 - Run main.py in the root directory using the command -
 
   `python3 main.py`
