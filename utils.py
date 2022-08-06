@@ -112,8 +112,7 @@ def predict_randomly(mode='all'):
 
     return pred
 
-
-# TODO Soham
+# to encounter data imbalance 
 def get_sampler(labels):
 
     from torch.utils.data import WeightedRandomSampler
@@ -130,9 +129,8 @@ def get_sampler(labels):
 
     return(sampler)
 
+
 # mostly based on https://www.realpythonproject.com/understanding-accuracy-recall-precision-f1-scores-and-confusion-matrices/
-
-
 # This function plots the confusion matrix and saves it.
 def conf_plot(confusion, save_dir, name, ckpt):
     import seaborn as sns
@@ -144,7 +142,6 @@ def conf_plot(confusion, save_dir, name, ckpt):
     plt.savefig(save_dir + '.png', dpi=300)
 
 
-# TODO Soham
 def rocBinaryPlot(probs, labels, name):
     from sklearn.metrics import roc_curve
     from sklearn.metrics import roc_auc_score
@@ -163,7 +160,7 @@ def rocBinaryPlot(probs, labels, name):
 
     return rAucScore
 
-# TODO Soham
+
 def rocBinaryPlots(probsList, labels, nameList):
     from sklearn.metrics import roc_curve
     from sklearn.metrics import roc_auc_score
@@ -186,7 +183,7 @@ def rocBinaryPlots(probsList, labels, nameList):
     return lRAuc
 
 
-# TODO Soham
+
 def precRecallBinaryPlot(probs, labels, name):
     from sklearn.metrics import precision_recall_curve
     from sklearn.metrics import auc
@@ -208,7 +205,7 @@ def precRecallBinaryPlot(probs, labels, name):
 
     return prAucScore
 
-# TODO Soham
+
 def precRecallBinaryPlots(probsList, labels, nameList):
     from sklearn.metrics import precision_recall_curve
     from sklearn.metrics import auc
@@ -230,7 +227,7 @@ def precRecallBinaryPlots(probsList, labels, nameList):
 
     return lPRAuc
 
-# TODO Soham
+
 def set_parameter_requires_grad(model, feature_extracting):
     if feature_extracting:
         for param in model.parameters():
@@ -238,7 +235,8 @@ def set_parameter_requires_grad(model, feature_extracting):
 
 
 if __name__ == '__main__':
-    dir = '/workspace/users/Group-2/'
+    # specify the directory
+    dir = '..'
     save_name = 'resnet-e500-preTrained'
     rand = False
     name = 'ResNet18 with pretraining'
