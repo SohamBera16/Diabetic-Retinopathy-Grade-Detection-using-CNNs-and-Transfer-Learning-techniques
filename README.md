@@ -12,7 +12,7 @@ Indian Diabetic Retinopathy Dataset (IDRID) - Disease Grading sub-section which 
 
 The dataset can be downloaded from this link: https://ieee-dataport.org/open-access/indian-diabetic-retinopathy-image-dataset-idrid
 
-![5 stages of the disease](5 stages of DR)
+![5 stages of the disease](5 stages of DR.jpg)
 
 ## Baseline CNN Model execution :
 
