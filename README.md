@@ -55,7 +55,7 @@ Once you are satisfied with the settings, simply run the main.py from the root d
   
 ### Result
 
-By using 
+By using the Alexnet and Resnet18 models with pretrained weights
 
 ## Disclaimer: 
 This project was developed by the author as part of the Fachpraktikum (advanced internship): Artificial Intelligence within the University of Stuttgart. [Year: 2022]
