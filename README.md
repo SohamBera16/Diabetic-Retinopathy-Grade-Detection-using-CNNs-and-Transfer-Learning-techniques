@@ -55,7 +55,7 @@ Once you are satisfied with the settings, simply run the main.py from the root d
   
 ### Results
 
-By using the Alexnet and Resnet18 models with pretrained weights
+Through the analysis, it was found that the Alexnet and Resnet18 transfer learning models with pretrained weights were the best ones in terms of accuracy as well as F1 score metrics and Resnet18 in particular provided the best overall improvement upon the baseline CNN model by providing almost 20% improvement over the baseline results.
 
 ## Disclaimer: 
 This project was developed by the author as part of the Fachpraktikum (advanced internship): Artificial Intelligence within the University of Stuttgart. [Year: 2022]
