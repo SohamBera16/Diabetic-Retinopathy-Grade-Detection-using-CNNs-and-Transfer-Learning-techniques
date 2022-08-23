@@ -53,7 +53,7 @@ Once you are satisfied with the settings, simply run the main.py from the root d
 
   `python3 main.py`
   
-### Result
+### Results
 
 By using the Alexnet and Resnet18 models with pretrained weights
 
