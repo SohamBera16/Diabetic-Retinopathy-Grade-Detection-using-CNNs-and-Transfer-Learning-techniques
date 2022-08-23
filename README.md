@@ -52,6 +52,8 @@ The parameters of the network can be tuned by accordingly changing the following
 Once you are satisfied with the settings, simply run the main.py from the root directory:
 
   `python3 main.py`
+  
+### Result
 
 ## Disclaimer: 
 This project was developed by the author as part of the Fachpraktikum (advanced internship): Artificial Intelligence within the University of Stuttgart. [Year: 2022]
