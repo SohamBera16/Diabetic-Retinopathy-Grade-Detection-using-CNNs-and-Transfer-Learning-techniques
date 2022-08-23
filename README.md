@@ -55,5 +55,7 @@ Once you are satisfied with the settings, simply run the main.py from the root d
   
 ### Result
 
+By using 
+
 ## Disclaimer: 
 This project was developed by the author as part of the Fachpraktikum (advanced internship): Artificial Intelligence within the University of Stuttgart. [Year: 2022]
